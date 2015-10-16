@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These textfields below can hide keyboard when press return key without implement each one." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggO-Ik-Bcu">
+                                <rect key="frame" x="30" y="50" width="540" height="36"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sample Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x94-JT-oYA" userLabel="Sample Text 1" customClass="CustomTextField" customModule="CustomTextField">
+                                <rect key="frame" x="70" y="128" width="460" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sample Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BQA-0u-DAo" userLabel="Sample Text 2" customClass="CustomTextField" customModule="CustomTextField">
+                                <rect key="frame" x="70" y="178" width="460" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sample Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j7S-YV-qwS" userLabel="Sample Text 3" customClass="CustomTextField" customModule="CustomTextField">
+                                <rect key="frame" x="70" y="228" width="460" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BQA-0u-DAo" firstAttribute="top" secondItem="x94-JT-oYA" secondAttribute="bottom" constant="20" id="0uA-pe-NeZ"/>
+                            <constraint firstItem="ggO-Ik-Bcu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="50" id="5dg-Dz-ezH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BQA-0u-DAo" secondAttribute="trailing" constant="50" id="BG2-3j-l32"/>
+                            <constraint firstItem="j7S-YV-qwS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="Dvi-my-zfg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ggO-Ik-Bcu" secondAttribute="trailing" constant="10" id="IiD-Pc-Czj"/>
+                            <constraint firstItem="ggO-Ik-Bcu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Llb-Le-Ou6"/>
+                            <constraint firstItem="BQA-0u-DAo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="NdG-df-IQ4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="x94-JT-oYA" secondAttribute="trailing" constant="50" id="ZJd-SZ-Igx"/>
+                            <constraint firstItem="j7S-YV-qwS" firstAttribute="top" secondItem="BQA-0u-DAo" secondAttribute="bottom" constant="20" id="Ztm-wE-bgF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j7S-YV-qwS" secondAttribute="trailing" constant="50" id="jnq-73-mhu"/>
+                            <constraint firstItem="x94-JT-oYA" firstAttribute="top" secondItem="ggO-Ik-Bcu" secondAttribute="bottom" constant="42" id="k7N-sL-GEN"/>
+                            <constraint firstItem="x94-JT-oYA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="kR4-ZH-Mpb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
